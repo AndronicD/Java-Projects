@@ -1,0 +1,96 @@
+Nume: Andronic Dragos Sebastian
+Grupa: 324CD
+
+Descriere generala: in clasa main am generat fisierele de output si am creat un obiect de tip Simulation (ce va
+fi descris ulterior) ce contine metoda simulate in care preiau input-ul reprezentand lista de obiecte Child si
+realizez modificari pe parcursul simularii.
+
+Pachetul implment: director ce contine fisierele .java si locul unde am organizat rezolvarea proiectului
+
+Pachetul agehandler: director in care am folosit design pattern-ul Strategy ce seteaza averageScore-ul unui
+obiect de tip Child in functie de varsta acestuia
+
+Interfata Strategy: contine metoda setAverageScore
+Clasa Baby: implementeaza interfata Strategy si seteaza scorul la 10.0
+Clasa Context: contine un camp de tip Strategy si executa Strategia
+Clasa Handler: contine metoda handleAge ce creeaza cate un obiect Context in functie de categoria de varsta
+pe care o are un obiect Child sau elimina din lista curenta pe cei ce au varsta mai mare de 18 ani
+Clasa Kid: implementeaza interfata Strategy si seteaza scorul ca media aritmetica a unei liste de niceScore-uri
+Clasa Teen: implementeaza interfata Strategy si seteaza scorul ca media ponderata a unei liste de niceScore-uri
+
+Pachetul calculator: pachet ce contine clasa Calculator in care am implementat 3 metode ce se ocupa de diferite
+calcule necesare unei simulari: sumOfAverages (calculeaza suma tuturor averageScore-urilor unei liste de copii),
+calculateUnit (calculeaza si seteaza unitatea bugetului), calculateEachBudget(calculeaza si seteaza bugetul asignat
+unui copil)
+
+Pachetul elfhandler: director in care am folosit design pattern-ul Strategy ce seteaza bugetul asignat unui
+obiect de tip Child in functie de varsta acestuia
+
+Interfata ElfStrategy: contine metoda setAssignatedBudget
+Clasa Black: implementeaza interfata Strategy si scade bugetul asignat cu 30%
+Clasa ElfContext: contine un camp de tip ElfStrategy si executa Strategia
+Clasa ElfHandler: contine metoda handleElf si aplica strategia pentru fiecare element din lista de copii
+Clasa Pink: implementeaza interfata Strategy si mareste bugetul asignat cu 30%
+Clasa White: implementeaza interfata Strategy si nu influenteaza bugetul
+
+Pachetul giftdistributor: pachet ce contine clase ce se ocupa de asignarea obiectelor de tip Gift pentru o lista
+de copii
+Clasa GiftFinder: contine metodele findGiftCat (ce intoarce o lista de cadouri apartinand unei categorii de cadouri) si
+getTheCheapest (ce intoarce cel mai ieftin cadou dintr-o lista de cadouri)
+Clasa Distrubutor: contine un camp de tip GiftFinder, asigneaza cadourile unei liste de copii primita ca parametru in
+functie de bugetul lor asignat
+
+Pachetul nicescorebonushandler: contine clasa NiceScoreBonus in care am folosit design pattern-ul Builder si contine
+metoda giveBonus ce mareste averageScore-ul unui obiect de tip Child
+
+Pachetul outout_writer: contine clasa Writer implementata ca Singleton, scrie rezultatele simularii in fisierele de
+output
+
+Pachetul reader: contine clasele in care retin datele de intrare
+Clasa ChildInput: retine informatiile initiale legate de un obiect Child
+Clasa InitialData: retine doua liste de date initiale(copii si lista de cadouri)
+Clasa Input: retine toate datele initiale (noul buget, numarul de ani, initialData, schimbarile anuale)
+Clasa Reader: imlementata ca Singleton, este folosita pentru citirea datelor
+
+Pachetul strategy: director in care am folosit design pattern-ul Strategy pentru aplica o strategie de sortare unei
+liste de obiecte de tip Child
+
+Interfata SortStrategy: contine metoda sort
+Clasa Id: implementeaza interfata SortStrategy si sorteaza lista in functie de id
+Clasa NiceScore: implementeaza interfata SortStrategy si sorteaza lista in functie de scorurile nice
+Clasa NiceScoreCity: implementeaza interfata SortStrategy si sorteaza lista in functie de scorul nice al unui oras
+Clasa SortContext: contine un camp de tip SortStrategy si executa Strategia
+Clasa SortHandler: contine metoda handleSort care aplica strategia de sortare unei liste
+
+Pachetul updater: am folosit design pattern-ul Command pentru a realiza schimbarile anuale in lista de copii
+
+Interfata Update: contine metoda update
+Clasa Updater: contine un camp de tip AnnualChange si contine toate metodele legate de update-urile anuale
+Clasa UpdateBudget: implementeaza interfata Update, contine un camp Updater ce executa metoda update pentru noul
+buget
+Clasa UpdateChildrenInfo:implementeaza interfata Update, contine un camp Updater ce executa metoda update pentru
+actualizarile legate de copii
+Clasa UpdateChildrenList:implementeaza interfata Update, contine un camp Updater ce executa metoda update pentru
+adaugarile in lista de copii
+Clasa UpdateGiftList:implementeaza interfata Update, contine un camp Updater ce executa metoda update pentru adaugarile
+in lista de cadouri
+
+Pachetul yellowelf: contine clasa YellowElf ce verifica daca un copil are asignat campul elf ca yellow,
+verifica daca acest copil a primit cadouri, iar daca nu a primit cauta cel mai ieftin cadou din categoria
+preferata si il asigneaza doar daca cantitea acestuia este mai mare decat 0
+
+Clasa AnnualChange: retine informatiile legate de actualizarile anuale
+Clasa Child: retine informatiile legate de caracteristicile unui copil
+Clasa ChildFinder: contine metodele findChild (intoarce referinta la un obiect de tip ChildInput)
+si findChildById (intoarce niceScoreBonus-ul unui obiect de tip ChildInput)
+Clasa ChildrenList: retine o lista de copii
+Clasa ChildrenOutput: retine lista de liste de copii (mai exact o lista de ChildrenList)
+Clasa ChildrenUpdate: retine informatii legate update-ul unui copil
+Clasa DataTransfer: contine doua metode transferData (creaza o lista de obiecte Child in functie de o lista de
+obiecte ChildrenInput) si copyData (copiaza datele de la un obiect ChildrenList la altul)
+Clasa Gift: retine informatiile legate de caracteristicile unui cadou
+Clasa GiftInput: retine informatiile legate de caracteristicile unui cadou, dar si cantitatea acestuia
+Clasa Santa: retine informatiile legate de
+Clasa Simulation: citesc datele de intrare, le transfer la o lista de copii si initial le setez scorurile average,
+calculez unitatea de buget si asignez un buget per copil, apoi distribui cadourile, urmand ca la fiecare runda sa
+actualizez informatiile in lista de copii si sa scriu rezultatele in output.
