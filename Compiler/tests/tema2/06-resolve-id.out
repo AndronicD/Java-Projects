@@ -1,0 +1,4 @@
+"06-resolve-id.cl", line 1:7, Syntax error: mismatched input 'A' expecting {TYPE, ID}
+"06-resolve-id.cl", line 2:7, Syntax error: extraneous input 'f' expecting {<EOF>, 'class'}
+"main.cl", line 1:7, Syntax error: mismatched input 'Main' expecting {TYPE, ID}
+"main.cl", line 2:10, Syntax error: extraneous input ')' expecting {<EOF>, 'class'}

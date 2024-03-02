@@ -1,0 +1,10 @@
+"19-self_type.cl", line 1:7, Syntax error: mismatched input 'A' expecting {TYPE, ID}
+"19-self_type.cl", line 5:7, Syntax error: extraneous input 'y' expecting {<EOF>, 'class'}
+"19-self_type.cl", line 24:7, Syntax error: mismatched input 'B' expecting {TYPE, ID}
+"19-self_type.cl", line 25:7, Syntax error: extraneous input ')' expecting {<EOF>, 'class'}
+"19-self_type.cl", line 28:7, Syntax error: mismatched input 'C' expecting {TYPE, ID}
+"19-self_type.cl", line 29:7, Syntax error: extraneous input ')' expecting {<EOF>, 'class'}
+"19-self_type.cl", line 57:7, Syntax error: mismatched input 'D' expecting {TYPE, ID}
+"19-self_type.cl", line 58:8, Syntax error: extraneous input ')' expecting {<EOF>, 'class'}
+"main.cl", line 1:7, Syntax error: mismatched input 'Main' expecting {TYPE, ID}
+"main.cl", line 2:10, Syntax error: extraneous input ')' expecting {<EOF>, 'class'}

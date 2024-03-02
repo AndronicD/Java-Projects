@@ -1,0 +1,14 @@
+"03-define-method.cl", line 1:7, Syntax error: mismatched input 'A' expecting {TYPE, ID}
+"03-define-method.cl", line 4:7, Syntax error: extraneous input 'x' expecting {<EOF>, 'class'}
+"03-define-method.cl", line 11:7, Syntax error: mismatched input 'B' expecting {TYPE, ID}
+"03-define-method.cl", line 14:10, Syntax error: extraneous input 'self' expecting {<EOF>, 'class'}
+"03-define-method.cl", line 23:7, Syntax error: mismatched input 'C' expecting {TYPE, ID}
+"03-define-method.cl", line 24:7, Syntax error: extraneous input 'u' expecting {<EOF>, 'class'}
+"03-define-method.cl", line 27:7, Syntax error: mismatched input 'D' expecting {TYPE, ID}
+"03-define-method.cl", line 28:7, Syntax error: extraneous input 'u' expecting {<EOF>, 'class'}
+"03-define-method.cl", line 31:7, Syntax error: mismatched input 'E' expecting {TYPE, ID}
+"03-define-method.cl", line 32:7, Syntax error: extraneous input 'u' expecting {<EOF>, 'class'}
+"03-define-method.cl", line 35:7, Syntax error: mismatched input 'F' expecting {TYPE, ID}
+"03-define-method.cl", line 36:7, Syntax error: extraneous input 'u' expecting {<EOF>, 'class'}
+"main.cl", line 1:7, Syntax error: mismatched input 'Main' expecting {TYPE, ID}
+"main.cl", line 2:10, Syntax error: extraneous input ')' expecting {<EOF>, 'class'}
