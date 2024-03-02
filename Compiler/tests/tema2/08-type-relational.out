@@ -1,3 +1,0 @@
-"08-type-relational.cl", line 1:7, Syntax error: mismatched input 'A' expecting {TYPE, ID}
-"main.cl", line 1:7, Syntax error: mismatched input 'Main' expecting {TYPE, ID}
-"main.cl", line 2:10, Syntax error: extraneous input ')' expecting {<EOF>, 'class'}

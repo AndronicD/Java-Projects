@@ -1,7 +1,0 @@
-"18-type-dispatch.cl", line 1:7, Syntax error: mismatched input 'A' expecting {TYPE, ID}
-"18-type-dispatch.cl", line 2:7, Syntax error: extraneous input 'b' expecting {<EOF>, 'class'}
-"18-type-dispatch.cl", line 28:7, Syntax error: mismatched input 'Z' expecting {TYPE, ID}
-"18-type-dispatch.cl", line 31:7, Syntax error: extraneous input 'x' expecting {<EOF>, 'class'}
-"18-type-dispatch.cl", line 34:7, Syntax error: mismatched input 'C' expecting {TYPE, ID}
-"main.cl", line 1:7, Syntax error: mismatched input 'Main' expecting {TYPE, ID}
-"main.cl", line 2:10, Syntax error: extraneous input ')' expecting {<EOF>, 'class'}
